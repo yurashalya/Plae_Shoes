@@ -1,0 +1,15 @@
+.desc__content {
+	display: flex;
+	flex-wrap: wrap;
+
+	& .desc__content__main {
+		display: flex;
+		flex-direction: column;
+		width: 640px;
+	}
+
+	& .desc__content__item {
+		width: 640px;
+		
+	}
+}
