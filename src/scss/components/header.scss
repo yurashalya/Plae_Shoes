@@ -7,11 +7,13 @@
 
 .head {
 	background: url(../../img/bgr1.jpg) no-repeat center top / cover  ;
+	background-attachment: fixed;
 	height: 800px;
 
 	& .head__logo {
 		margin-left: 34px;
 		padding-top: 34px;
+		display: inline-block;
 	}
 
 	& .head__main {

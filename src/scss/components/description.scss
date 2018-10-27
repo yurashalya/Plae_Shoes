@@ -1,14 +1,132 @@
 .desc__content {
 	display: flex;
-	flex-wrap: wrap;
+    flex-wrap: wrap;
+
 
 	& .desc__content__main {
-		display: flex;
-		flex-direction: column;
-		width: 640px;
+		width: 50%;
+		margin-top: 115px;
+        text-align: center; 
+  		
+
+		& h3 {
+			font-size: 30px;
+			font-family: $font-main;
+			font-weight: $regular;
+			text-align: center;
+		}
+
+		& .desc__content__mains {
+			margin-top: 45px;
+			padding:  0 10px;
+			margin-left: 130px;
+			margin-right: 130px;
+    		font-size: 16px;
+			line-height: 24px;
+			font-family: $font-primary;
+			color: $black;
+			text-align: center;
+		}
 	}
 
 	& .desc__content__item {
-		width: 640px;
+		width: 50%;
+		max-height: 100%;
+		justify-content: center;
+  		align-items: center;
+    	
+		& img {
+			width: 100%;
+			height: auto;
+			max-height: 100%;
+		}
+	}
+}
+
+
+@media only screen and (max-width: 1124px) {
+	.desc__content__mains {
+		margin-left: 5px !important;
+		margin-right: 5px !important;
+		margin-top: 50px !important;
+		margin-bottom: 20px;
+		font-size: 15px !important;
+	}
+	
+	.desc__content__main {
+		margin-top: 40px !important;
+	}
+
+}
+
+@media only screen and (max-width: 993px) {
+	.desc__content__mains {
+		margin-top: 30px !important;
+	}
+
+	.desc__content__main {
+		margin-top: 30px !important;
+	}
+}
+
+@media only screen and (max-width: 913px) {
+	.desc__content__mains {
+		margin-top: 20px !important;
+	}
+
+	.desc__content__main {
+		margin-top: 20px !important;
+	}
+}
+
+@media only screen and (max-width: 853px) {
+	.desc__content__mains {
+		margin-top: 10px !important;
+	}
+
+	.desc__content__main {
+		margin-top: 20px !important;
+	}
+}
+
+@media only screen and (max-width: 824px) {
+	.desc__content__mains {
+		margin-top: 5px !important;
+		margin-bottom: 10px !important;
+	}
+
+	.desc__content__main {
+		margin-top: 5px !important;
+	}
+}
+
+@media only screen and (max-width: 780px) {
+	.desc__content__item  {
+		display: none;	
+	}
+
+	.desc__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.desc__content__main {
+		 width: 100% !important;
+		 margin-top: 30px !important;
+
+		 & h3 {
+		 	margin-bottom: 20px !important;
+		 }
+	}
+
+	.desc__content__mains {
+		font-size: 16px !important;
+	}
+}
+
+@media only screen and (max-width: $mobile-width) {
+	.desc__content__mains {
+		font-size: 14px !important;
 	}
 }
