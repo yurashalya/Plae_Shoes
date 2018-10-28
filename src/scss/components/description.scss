@@ -2,7 +2,6 @@
 	display: flex;
     flex-wrap: wrap;
 
-
 	& .desc__content__main {
 		width: 50%;
 		margin-top: 115px;
@@ -37,18 +36,19 @@
     	
 		& img {
 			width: 100%;
-			height: auto;
+			max-height: 100%;
 			max-height: 100%;
 		}
 	}
 }
 
 
-@media only screen and (max-width: 1124px) {
+@media only screen and (max-width: 1125px) {
+
 	.desc__content__mains {
 		margin-left: 5px !important;
 		margin-right: 5px !important;
-		margin-top: 50px !important;
+		margin-top: 60px !important;
 		margin-bottom: 20px;
 		font-size: 15px !important;
 	}
@@ -114,6 +114,7 @@
 	.desc__content__main {
 		 width: 100% !important;
 		 margin-top: 30px !important;
+		 margin-bottom: 25px !important;
 
 		 & h3 {
 		 	margin-bottom: 20px !important;
