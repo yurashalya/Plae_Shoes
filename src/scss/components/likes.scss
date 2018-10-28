@@ -1,42 +1,24 @@
-.custom {
+.likes {
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: wrap;	
 	margin-top: -3px;
 
-	& .custom__img {
+	& .likes__title {
 		width: 50%;
-		max-height: 100%;
-
-		& .custom__imgs {
-			width: 100%;
-			height: auto;
-		}
-	}
-	
-	& .custom__title {
-		width: 50%;
+		text-align: center;
 		display: flex;
 		flex-direction: column;
-		align-items: center;
-
-		& h2 {
-			margin-top: 210px;
-			font-family: $font-main;
-			font-size: 30px;
-			color: $black;
-			font-weight: $regular;
-		}
 
 		& p {
-			position: relative;
-			color: $black;
+			margin: 340px 170px 160px;
 			font-size: 20px;
 			font-family: $font-primary;
+			color: $black;
 			font-weight: $regular;
-			line-height: 30px;
+			line-height: 29px;
 			text-align: center;
 			letter-spacing: 1px;
-			margin: 120px 155px 100px;
+			position: relative;
 		}
 
 		& p::before {
@@ -57,98 +39,94 @@
 			font-size: 72px;
 			font-weight: $light;
 			color: $grey4;
-			right: -10px;
+			right: -15px;
 			bottom: -56px;
 		}
 
 		& span {
-			font-size: 18px;
 			font-family: $font-primary;
 			font-weight: $regular;
 			color: $black;
-			letter-spacing: 1;
+			letter-spacing: 1px;
+			font-size: 18px;
+		}
+	}
+
+	& .likes__img {
+		width: 50%;
+		max-height: 100%;
+
+		& .likes__imgs {
+			width: 100%;
+			height: auto;
 		}
 	}
 }
 
 
+
 @media only screen and (max-width: 1125px) {
-	.custom__title p {
+	.likes__title p {
+		margin-top: 230px !important;
 		margin-left: 55px !important;
 		margin-right: 55px !important;
 	}
 
-	.custom__title h2 {
-		margin-top: 130px !important ;
-	}
 }
 
 @media only screen and (max-width: $large-width) {
-	.custom__title p {
-		margin-top: 70px !important;
+	.likes__title p {
+		margin-top: 190px !important;
 	}
 }
 
 @media only screen and (max-width: 884px) {
-	.custom__title h2 {
-		margin-top: 100px !important;
-	}
-
-	.custom__title p {
+	.likes__title p {
 		font-size: 19px !important;
 		margin-bottom: 70px !important;
+		margin-top: 140px !important;
 	}
 }
 
 @media only screen and (max-width: 800px) {
-	.custom__title h2 {
-		margin-top: 60px !important;
-	}
-
-	.custom__title p {
+	.likes__title p {
 		margin-bottom: 50px !important;
 	}
 }
 
 @media only screen and (max-width: 700px) {
-	.custom__img {
+	.likes {
+		display: flex;
+		flex-wrap: wrap-reverse !important;
+	}
+	
+	.likes__title p {
+		margin-top: 60px !important;
+	}
+
+
+	.likes__img {
 		width: 100% !important;
 	}
 
-	.custom__title {
+	.likes__title {
 		width: 100% !important;
-	}
-
-	.custom {
-		padding-bottom: 35px;
 	}
 }
 
 @media only screen and (max-width: 600px) {
-	.custom__title p {
+	.likes__title p {
 		margin-left: 45px !important;
 		margin-right: 45px !important;
-	}
-
-	.custom__title h2 {
-		font-size: 25px !important;
 	}
 }
 
 @media only screen and (max-width: 450px) {
-	.custom__title p {
+	.likes__title p {
 		font-size: 16px !important;
 	}
 
-	.custom__title h2 {
-		font-size: 20px !important;
-	}
-
-	.custom__title h2 {
-		margin-top: 25px !important;
-	}
-
-	.custom__title span {
+	.likes__title span {
 		margin-bottom: 30px;
 	}
 }
