@@ -71,6 +71,11 @@
 			letter-spacing: 0.5px;
 			font-weight: $light;
 			color: $gren;
+			transition: color 0.8s;
+		}
+
+		& a:hover {
+			color: $black;
 		}
 	}
 }

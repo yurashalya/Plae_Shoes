@@ -1,0 +1,80 @@
+.footer {
+	background-color: $grey6;
+
+	& h2 {
+		margin-bottom: 10px;
+		text-align: center;
+		font-family: $font-main;
+		font-size: 30px;
+		font-weight: $bold;
+		padding-top: 130px;
+	}
+
+	& p {
+		margin-top: 20px;
+		text-align: center;
+		font-family: $font-primary;
+		font-weight: $regular;
+		line-height: 38px;
+		font-size: 22px;	
+	}
+
+	.footer__main {
+		display: flex;
+		justify-content: center;
+		// padding-top: 50px;
+		// padding-bottom: 110px;
+		padding:  50px 5px 110px;
+	}
+
+	& .form__input {
+		width: 310px;
+		height: 45px;
+		font-size: 18px;
+		padding-left: 20px;
+		outline: none;
+		border: 0;
+		font-family: $font-primary;
+		color: $grey5;
+		border-top-left-radius: 23px;
+		border-bottom-left-radius: 23px;
+	}
+
+	& .btn {
+		font-family: $font-main;
+		width: 165px;
+		height: 45px;
+		font-size: 30px;
+		border: 0;
+		border-top-right-radius: 23px;
+		border-bottom-right-radius: 23px;
+	    background: $gren;
+		outline: none;
+		cursor: pointer;
+		color: $white;
+		font-size: 22px;
+		transition:  background 0.3s ease-out;
+	}
+
+	& .btn:hover {
+				background: $gren2; 
+			}
+	
+	& .footer__end {
+		display: flex;
+		align-items: center;
+		height: 40px;
+		background-color: $grey7;
+		padding: 0 35px;
+	}
+
+
+	& .footer__end span {
+		font-weight: $regular;
+		color: $white;
+		font-family: $font-primary;
+		line-height: 20px;
+		font-size: 14px;
+		letter-spacing: 0.4px;
+	}
+}
