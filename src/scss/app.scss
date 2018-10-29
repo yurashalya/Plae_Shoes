@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400|Yantramanav:100,300,400');
 
-@import "settings/normalize";
-@import "settings/variables";
+@import "settings/_normalize";
+@import "settings/_variables";
 @import "components/header";
 @import "components/description";
 @import "components/custom";
 @import "components/likes";
 @import "components/slider";
 @import "components/plae";
+@import "components/find";
 
 

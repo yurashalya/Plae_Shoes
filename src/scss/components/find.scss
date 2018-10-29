@@ -1,0 +1,118 @@
+.find {
+
+	& h2 {
+		margin-top: 40px;
+		font-size: 30px;
+		font-weight: $regular;
+		font-family: $font-main;
+		text-align: center;
+		padding: 0px 5px;
+	}
+
+	& p {
+		font-size: 18px;
+		font-weight: $light;
+		line-height: 1;
+		font-family: $font-primary;
+		text-align: center;
+		margin-top: 20px;
+		letter-spacing: 0.3px;
+		padding: 0px 10px;
+	}
+
+	& .find__main {
+		display: flex;
+		flex-direction: column;
+		padding-right: 115px;
+		padding-left: 115px;
+	}
+
+	& .find__main__desc {
+		display: flex;
+		justify-content: space-between;
+		font-weight: $regular;
+	}
+
+	& .find__main__desc:first-child {
+		margin-top: 75px;
+	}
+	
+	& .find__main__desc:nth-child(2) {
+		margin-top: 55px;
+	}
+
+	& .find__main__desc:nth-child(3) {
+		margin-top: 55px;
+	}
+
+	.find__main__desc__item {
+
+		& h4 {
+			font-family: $font-primary;
+			font-size: 16px;
+			font-weight: $regular;
+			letter-spacing: 0.2px;
+			line-height: 23px;
+		}
+
+		& span {
+			display: block;
+			font-family: $font-primary;
+			font-size: 16px;
+			font-weight: $light;
+			letter-spacing: 0.2px;
+			line-height: 22px;
+		}
+
+		& a {
+			font-family: $font-primary;
+			line-height: 25px;
+			font-size: 19px;
+			letter-spacing: 0.5px;
+			font-weight: $light;
+			color: $gren;
+		}
+	}
+}
+
+@media only screen and (max-width: 1250px) {
+	.find__main {
+		flex-direction: row !important;
+		justify-content: space-between !important;
+		padding: 0px 80px 80px 80px !important;
+		align-items: flex-start !important;
+	}
+
+	.find__main__desc {
+		flex-direction: column !important;
+	}
+
+	.find__main__desc:first-child  {
+		margin-top: 55px !important;
+	}
+
+	.find__main__desc__item {
+		margin: 20px 0px;
+	}
+}
+
+@media only screen and (max-width: 730px) {
+	.find__main {
+		flex-direction: column !important;
+		align-items: center !important;
+	}
+
+	.find__main__desc__item {
+		text-align: center !important;
+	}
+
+	.find__main__desc:nth-child(2)  {
+		margin-top: 5px !important;
+	}
+	
+	.find__main__desc:nth-child(3)  {
+		margin-top: 5px !important;
+	}
+
+
+}
