@@ -81,6 +81,11 @@
 				cursor: pointer;
 				color: $white;
 				font-size: 22px;
+				transition:  background 0.3s ease-out;
+			}
+
+			& .btn:hover {
+				background: $gren2; 
 			}
 		}
 	}

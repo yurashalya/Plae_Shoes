@@ -50,7 +50,6 @@
 
 	& .slider__number {
 		margin-top: 35px;
-		margin-bottom: 80px;
 		font-family: $font-primary;
 	    font-size: 18px;
 	    font-weight: $regular;
@@ -63,7 +62,7 @@
 		padding-top: 50%;
 		position: relative;
 		margin-top: 40px;
-		margin-bottom: 30px;
+		margin-bottom: 100px;
 		position: relative;
 	}
 
@@ -118,7 +117,18 @@
 		height: 15px !important;
 	  }
 
+	 
 
+}
+
+@media only screen and (max-width: 675px) {
+	 .slider__desc {
+		font-size: 20px !important;
+	  }
+		
+	  .slider__number {
+	  	font-size: 15px !important;
+	  }
 }
 
 

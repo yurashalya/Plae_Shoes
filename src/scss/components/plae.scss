@@ -1,0 +1,118 @@
+.plae {
+	background: url(../../img/bgr5.jpg) no-repeat center top / cover;
+	padding-top: 75px;
+
+	& h2 {
+		text-align: center;
+		font-size: 30px;
+		font-weight: $regular;
+		font-family: $font-main;
+	}
+
+	& .plae__item {
+		text-align: center;
+		font-size: 18px;
+		font-family: $font-primary;
+		font-weight: $light;
+		line-height: 1;
+		margin-top: 20px;
+		letter-spacing: 0.3px;
+	}
+
+	& .plae__content {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 70px 30px;
+
+		& .plae__content__one {
+			margin-top: 15px;
+		}
+
+		& .plae__desc {
+			width: 235px;
+			background: $white;
+			padding: 10px;
+			border-radius: 10px;
+			margin: 15px 0px;
+
+			& h4 {
+				font-size: 16px;
+				font-family: $font-primary;
+				font-weight: $regular;
+				line-height: 21px;
+				letter-spacing: 0.3px;
+			}
+
+			& p {
+				font-size: 15px;
+				font-weight: $light;
+				line-height: 21px;
+				font-family: $font-primary;
+			}
+		}
+
+		& .plae__content__two {
+			margin-top: 30px;
+		}
+	}
+}
+
+@media only screen and (max-width: $large-width) {
+	.plae {
+		background: url(../../img/bgr6.jpg) no-repeat center top /cover !important;
+	}
+	
+	.plae__content__two {
+		margin-top: 15px !important;
+	}
+
+}
+
+@media only screen and (max-width: $tablet-width) {
+	.plae__content {
+		padding-left: 25px !important;
+		padding-right: 25px !important;
+	}
+
+	.plae__desc h4 {
+		font-size: 14px !important;
+	}
+
+	.plae__desc p {
+		font-size: 13px !important;
+	}
+
+}
+
+@media only screen and (max-width: 660px) {
+
+	.plae {
+		margin-top: 200px !important;
+	}
+
+	.plae__content {
+		flex-direction: column;
+	}
+
+	.plae__desc {
+		width: 100%  !important;
+		text-align: center;
+	}
+
+	.plae__content__two {
+		margin-top: -15px !important;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
